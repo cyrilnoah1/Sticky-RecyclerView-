@@ -2,6 +2,7 @@ package com.example.rapid.stickyrecyclerviewdemo;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,8 @@ import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderDecoration;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> implements
         StickyHeaderAdapter<RecyclerAdapter.HeaderHolder> {
+
+    final String TAG = "RecyclerAdapter";
 
     private List<Contact> mData;
     private Context mContext;
@@ -89,11 +92,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public long getHeaderId(int position) {
-        if (position == 0) { // don't show header for first item
-            return StickyHeaderDecoration.NO_HEADER_ID;
-        }
         return (long) position / 2;
     }
+
+
 
 
 /*    @Override

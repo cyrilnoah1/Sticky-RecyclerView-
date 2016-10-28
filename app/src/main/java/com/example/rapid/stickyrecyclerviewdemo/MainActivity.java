@@ -42,14 +42,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void recyclerListWithTimelineData() {
         try {
-            mRecyclerData.add(new Contact("Cyril", "1232354234", "c@n.com", "invited", false));
             mRecyclerData.add(new Contact("Anisa", "1232354234", "a@n.com", "invited", false));
             mRecyclerData.add(new Contact("Akash", "1232354234", "c@n.com", "invited", false));
             mRecyclerData.add(new Contact("Ayeshu", "1232354234", "c@n.com", "invited", true));
             mRecyclerData.add(new Contact("Bhanu", "1232354234", "c@n.com", "invited", false));
-            mRecyclerData.add(new Contact("Sahil", "1232354234", "c@n.com", "invited", true));
             mRecyclerData.add(new Contact("Bhavesh", "1232354234", "c@n.com", "invited", false));
-            mRecyclerData.add(new Contact("Kalyan", "1232354234", "c@n.com", "invited", false));
+            mRecyclerData.add(new Contact("Cyril", "1232354234", "c@n.com", "invited", false));
+            mRecyclerData.add(new Contact("Chaitanya", "1232354234", "c@n.com", "invited", false));
 
         } catch (NullPointerException nPE) {
             nPE.printStackTrace();
